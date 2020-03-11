@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 
+import os
 print('Starting...')
 
-print(f'{full_repo_name}')
+print(os.environ)
+
+repo = os.environ["INPUT_FULL_REPO_NAME"]
+print(f'{repo}')
 
 print('Done!')
