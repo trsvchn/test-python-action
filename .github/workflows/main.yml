@@ -1,0 +1,10 @@
+name: Playing w/ python action
+on: push
+
+jobs:
+  build:
+    name: Python Hello World
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-py

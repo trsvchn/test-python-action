@@ -1,0 +1,17 @@
+name: "Hello Python"
+description: "Say hi to python"
+author: "user@github.com"
+
+inputs:
+  full_repo_name:
+    description: "Full repo name"
+    required: true
+    default: ${{ github.event.repository.full_name }}
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "book"
+  color: "yellow"
