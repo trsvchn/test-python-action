@@ -3,9 +3,9 @@
 import os
 print('Starting...')
 
-print(os.environ)
+repo = os.environ['GITHUB_REPOSITORY']
+user = os.environ['GITHUB_ACTOR']
 
-repo = os.environ["INPUT_FULL_REPO_NAME"]
-print(f'{repo}')
-
+print(f'Repo: {repo}')
+print(f'User: {user}')
 print('Done!')
