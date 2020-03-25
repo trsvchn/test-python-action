@@ -6,6 +6,4 @@ print('Starting...')
 repo = os.environ['GITHUB_REPOSITORY']
 user = os.environ['GITHUB_ACTOR']
 
-print(f'Repo: {repo}')
-print(f'User: {user}')
-print('Done!')
+print(f'Hello {user} of {repo}!')
