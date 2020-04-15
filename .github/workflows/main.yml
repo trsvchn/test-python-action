@@ -8,3 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: ./
+      - uses: trsvchn/colab-badge-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          check: 'all'
+          update: true
